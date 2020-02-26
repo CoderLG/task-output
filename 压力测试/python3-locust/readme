@@ -1,0 +1,15 @@
+-------------------locust 分布式-------------------------
+地名重新测试
+locust -f download38.py -H http://192.168.4.38:8310
+locust -f queryGeo.py --master
+locust -f queryGeo.py --slave --master-host=192.168.44.183
+
+
+
+locust -f queryGeo.py -H http://192.168.4.76:8310
+locust -f download9.py -H http://192.168.4.9:8310
+
+locust -f queryName.py --master
+locust -f queryName.py --slave --master-host=192.168.44.183
+
+ln -s /usr/bin/python3 /usr/bin/python

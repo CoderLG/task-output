@@ -1,0 +1,2 @@
+#½«ÏÈyum install pgdg-centos11-11-2.noarch.rpm
+yum install pgdg-centos11-11-2.noarch.rpm
